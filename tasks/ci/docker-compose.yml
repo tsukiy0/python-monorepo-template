@@ -1,0 +1,10 @@
+version: '3'
+services:
+  build_py:
+    build:
+      context: .
+      dockerfile: build_py.Dockerfile
+    volumes:
+      - ../..:/app
+    working_dir: /app
+    command: bash ./tasks/ci/build_py
