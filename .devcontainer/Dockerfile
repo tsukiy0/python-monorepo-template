@@ -1,10 +1,12 @@
-FROM mcr.microsoft.com/vscode/devcontainers/base:0-buster
+FROM mcr.microsoft.com/vscode/devcontainers/python:0-3.9-bullseye
 
-# RUN apt-get update && apt-get install --no-install-recommends -y \
-#     vim
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    vim
 
-# python
-RUN curl https://pyenv.run | bash
+# poetry
+USER vscode
+RUN curl -sSL https://install.python-poetry.org | python3 -
 
 # shell
-RUN echo "bindkey -v" >> /home/node/.zshrc
+RUN echo "set -o vi" >> /home/vscode/.bashrc
+RUN echo "bindkey -v" >> /home/vscode/.zshrc
