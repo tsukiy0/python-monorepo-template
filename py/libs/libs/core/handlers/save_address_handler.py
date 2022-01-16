@@ -19,4 +19,4 @@ class SaveAddressHandler:
         self.__address_repository = address_repository
 
     async def handle(self, request: SaveAddressRequest) -> None:
-        await self.__address_repository.save(request.address)
+        await self.__address_repository.save(address=request.address)

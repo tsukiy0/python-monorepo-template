@@ -6,13 +6,15 @@ authors = ["tsukiy0 <tsukiy0@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-pytest = "^6.2.5"
-black = "^21.12b0"
-flake8 = "^4.0.1"
-mypy = "^0.931"
-isort = "^5.10.1"
 
 [tool.poetry.dev-dependencies]
+black = "^21.12b0"
+Faker = "^11.3.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+mypy = "^0.931"
+pytest = "^6.2.5"
+pytest-asyncio = "^0.17.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
