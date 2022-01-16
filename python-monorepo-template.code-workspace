@@ -2,7 +2,14 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "py/libs"
     }
   ],
-  "settings": {}
+  "settings": {
+    "files.exclude": {
+      "py/*": true
+    }
+  }
 }
