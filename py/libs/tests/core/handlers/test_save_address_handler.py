@@ -2,11 +2,11 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from libs.core.services.address_repository import AddressRepository
 from libs.core.handlers.save_address_handler import (
     SaveAddressHandler,
     SaveAddressRequest,
 )
+from libs.core.services.address_repository import AddressRepository
 from tests.core.models.test_address import generate_address
 
 
