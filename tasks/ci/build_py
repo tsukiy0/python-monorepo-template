@@ -13,6 +13,6 @@ popd
 pushd py/api
 poetry install
 poetry run mypy .
-poetry run flake8 ./api ./tests
+poetry run flake8 ./api
 poetry run isort --profile black --check .
 popd
