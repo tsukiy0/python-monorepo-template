@@ -6,9 +6,13 @@ authors = ["tsukiy0 <tsukiy0@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+pytest = "^6.2.5"
+mypy = "^0.931"
+isort = "^5.10.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
