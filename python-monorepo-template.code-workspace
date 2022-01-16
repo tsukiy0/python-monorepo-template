@@ -5,6 +5,9 @@
     },
     {
       "path": "py/libs"
+    },
+    {
+      "path": "py/api"
     }
   ],
   "settings": {
